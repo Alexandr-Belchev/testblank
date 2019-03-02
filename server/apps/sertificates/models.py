@@ -7,13 +7,7 @@ class Sertificate(models.Model):
     identificator = models.PositiveIntegerField('Identificator', validators=[RegexValidator(r'^\d{6}$','Number must be 6 digits','Invalid number')])
     date = models.DateTimeField(auto_now_add=True)
     thumb = models.ImageField('Image', default='', blank=True, null=True)
-    author = models.CharField('Author', max_length=100)
+    author = models.CharField('Author', max_length=100, null=True)
     rating = models.IntegerField(default='0')
     def __str__(self):
         return self.title
-
-    def snippet(self):
-        if len(self.body) > 50:
-            return self.body[:50] + '...'
-        else:
-            return self.body
