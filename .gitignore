@@ -64,6 +64,3 @@ docs/build/
 npm-debug.log
 yarn-error.log
 pip-log.txt
-
-# Environment files
-.env
