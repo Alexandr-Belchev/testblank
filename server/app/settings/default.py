@@ -185,7 +185,7 @@ EMAIL_CONFIG = env.email_url('DJANGO_EMAIL_URL', 'consolemail://127.0.0.1')
 vars().update(EMAIL_CONFIG)
 
 
-CELERY_BROKER_URL = env.str('CELERY_BROKER_URL')
+# CELERY_BROKER_URL = env.str('CELERY_BROKER_URL')
 
 # If you are using HTTPS enable this
 
