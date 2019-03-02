@@ -67,5 +67,3 @@ pip-log.txt
 
 # Environment files
 .env
-
-server/app/settings/local.py
