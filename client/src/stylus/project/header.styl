@@ -1,0 +1,18 @@
+.header
+  h 110px
+  display flex
+  align-items center
+  &__wrapper
+    display flex
+    flex-direction column
+    w 100%
+    align-items center
+    +media(from('sm'))
+      flex-direction row
+      justify-content space-between
+    img
+      w 150px
+      mb 10px
+      +media(from('sm'))
+        mb 0
+        w 229px

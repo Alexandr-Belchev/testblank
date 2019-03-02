@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale= 1.0, width= device-width, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>Tesol</title>
+    <link rel="stylesheet" href="{{ static( 'css/style.css' ) }}">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700,800,900" rel="stylesheet">
+  </head>
+  <body class="body">
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="cell cols flex">
+            <div class="header__wrapper"><img src="{{ static( 'img/logo.jpg' ) }}"><a href="mailto:verify@global-tesol.com.ua">verify@global-tesol.com.ua</a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="section" style="background-image: url('/static/img/bg.jpg')">
+      <div class="container">
+        <div class="modal modal--hidden" data-type="info">
+          <div class="modal__content center"></div>
+          <div class="row">
+            <div class="cell cols flex justify-center">
+              <button class="button js-back">Back</button>
+            </div>
+          </div>
+        </div>
+        <div class="modal modal--hidden" data-type="error">
+          <div class="title center">ERROR</div>
+          <div class="modal__items">
+            <div class="text">Check the number again.</div>
+          </div>
+          <div class="row">
+            <div class="cell cols flex justify-center">
+              <button class="button js-back">Back</button>
+            </div>
+          </div>
+        </div>
+        <div class="modal" data-type="verify">
+          <h1 class="title">Certificate ID#:</h1>
+          <form class="form">
+            <div class="row">
+              <div class="cell cols">
+                <div class="modal__items">
+                  <div class="modal__input">
+                    <input class="input" name="id" autocomplete="off" type="number">
+                  </div>
+                  <div class="modal__input">
+                    <input class="input" name="id" autocomplete="off" type="number">
+                  </div>
+                  <div class="modal__input">
+                    <input class="input" name="id" autocomplete="off" type="number">
+                  </div>
+                  <div class="modal__input">
+                    <input class="input" name="id" autocomplete="off" type="number">
+                  </div>
+                  <div class="modal__input">
+                    <input class="input" name="id" autocomplete="off" type="number">
+                  </div>
+                  <div class="modal__input">
+                    <input class="input" name="id" autocomplete="off" type="number">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="cell cols flex justify-center">
+                <button class="button js-submit">Verification</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="sertificates">
+      <div class="container">
+        <div class="row">
+          <div class="cell cols cols--6-sm cols--4-lg mb-30">
+            <div>TESOL Specialization Certificate Program 60 hours</div><img class="sertificates__image" src="{{ static( 'img/sample1.jpg' ) }}">
+          </div>
+          <div class="cell cols cols--6-sm cols--4-lg mb-30">
+            <div>TESOL Specialization Certificate Program 60 hours</div><img class="sertificates__image" src="{{ static( 'img/sample2.jpg' ) }}">
+          </div>
+          <div class="cell cols cols--6-sm cols--4-lg mb-30">
+            <div>TESOL Specialization Certificate Program 60 hours</div><img class="sertificates__image" src="{{ static( 'img/sample3.jpg' ) }}">
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="{{ static( 'js/vendor.js' ) }}"></script>
+  <script src="{{ static( 'js/main.js' ) }}"></script>
+</html>

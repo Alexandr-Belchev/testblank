@@ -1,0 +1,37 @@
+.modal
+  bg-color #fff
+  border-radius 10px
+  pa 30px 10px
+  max-width 400px
+  box-sizing border-box
+  ma 0 auto
+  +media(from('sm'))
+    pa 30px
+  +media(from('md'))
+    max-width 610px
+    pa 40px
+  +media(from('lg'))
+    border-radius 20px
+    pa 70px 60px
+  &__items
+    ma 20px 0
+    display flex
+    justify-content center
+    +media(from('md'))
+      ma 30px 0
+    +media(from('lg'))
+      ma 40px 0
+  &--hidden
+    display none
+  &__input
+    position relative
+    &:after
+      +media(from('lg'))
+        content ''
+        bottom 5px
+        w 50%
+        left 50%
+        h 1px
+        position absolute
+        bg-color #808080
+        transform translateX(-50%)

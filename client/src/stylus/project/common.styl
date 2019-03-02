@@ -1,0 +1,36 @@
+body
+  ma 0
+  font-family 'Roboto'
+  fs 16px
+  +media(from('md'))
+    fs 20px
+  +media(from('lg'))
+    fs 27px
+a
+  text-decoration none
+  color #000
+  fs 18px
+  +media(from('md'))
+    fs 24px
+  +media(from('lg'))
+    fs 31px
+  &:hover
+    text-decoration underline
+.title
+  color #000
+  fs 20px
+  ma 0
+  fw 900
+  text-align center
+  line-height 1
+  +media(from('md'))
+    fs 30px
+    text-align left
+  +media(from('lg'))
+    fs 44px
+.center
+  text-align center
+  +media(from('md'))
+    text-align center
+.text
+  ma 20px 0

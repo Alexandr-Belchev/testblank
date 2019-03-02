@@ -1,0 +1,24 @@
+.input
+  border 1px solid #808080
+  border-radius 10px
+  text-align center
+  outline none
+  position relative
+  fs 14px
+  ma 0 6px
+  h 30px
+  w 22px
+  +media(from('sm'))
+    fs 24px
+    ma 0 10px
+    h 40px
+    w 30px
+  +media(from('md'))
+    fs 34px
+    h 76px
+    w 62px
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button
+  -webkit-appearance none
+  margin 0
