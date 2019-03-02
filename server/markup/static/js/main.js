@@ -4018,7 +4018,7 @@ window.jQuery = _jquery2.default;
         var data = JSON.parse(xhr.responseText);
         var fields = data.fields;
         (0, _jquery2.default)('form')[0].reset();
-        var template = '\n        <div class="title">' + fields.identificator + '</div>\n        <div class="text">' + fields.title + '</div>\n        <div class="text"><span>' + fields.date.split('T')[0] + '&nbsp;</span><span>Program ' + fields.hours + ' hours</span></div>\n        <div class="text">' + fields.author + '</div>\n        <div class="text">Average rating: ' + fields.rating + '</div>\n        ';
+        var template = '\n        <div class="title center">' + fields.identificator + '</div>\n        <div class="text">' + fields.title + '</div>\n        <div class="text"><span>' + fields.date.split('T')[0] + '&nbsp;</span><span>Program ' + fields.hours + ' hours</span></div>\n        <div class="text">' + fields.author + '</div>\n        <div class="text">Average rating: ' + fields.rating + '</div>\n        ';
         (0, _jquery2.default)('.modal[data-type="info"]').find('.modal__content').html((0, _jquery2.default)(template));
         (0, _jquery2.default)('.modal[data-type="verify"]').hide();
         (0, _jquery2.default)('.modal[data-type="info"]').show();

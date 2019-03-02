@@ -51,7 +51,7 @@ $('.js-submit').on('click', (e) => {
         let fields = data.fields
         $('form')[0].reset()
         let template = `
-        <div class="title">${fields.identificator}</div>
+        <div class="title center">${fields.identificator}</div>
         <div class="text">${fields.title}</div>
         <div class="text"><span>${fields.date.split('T')[0]}&nbsp;</span><span>Program ${fields.hours} hours</span></div>
         <div class="text">${fields.author}</div>
