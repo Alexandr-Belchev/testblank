@@ -52,7 +52,7 @@ pandas==0.23.4
 pathlib==1.0.1
 pbr==3.1.1
 Pillow==5.3.0
-pipenv==2018.11.26
+pipenv==2022.1.8
 poyo==0.4.2
 psutil==5.4.2
 psycopg2-binary==2.7.6.1
