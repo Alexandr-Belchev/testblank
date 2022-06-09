@@ -12,7 +12,7 @@ chardet==3.0.4
 Click==7.0
 colorama==0.3.7
 constantly==15.1.0
-cookiecutter==1.6.0
+cookiecutter==2.1.1
 cryptography==2.1.4
 Django==1.11.16
 django-allauth==0.38.0
